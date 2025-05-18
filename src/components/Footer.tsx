@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
-import { Mail, Phone, Home } from 'lucide-react';
+import { Mail, Phone, Home, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <Logo className="mb-4" />
             <p className="text-dark-green/80 text-sm max-w-xs text-center md:text-left">
-              Ich begleite Ihre wichtigsten Lebensmomente mit meiner Stimme und helfe Ihnen, Ihre Geschichte zu erzählen.
+              Ich begleite deine wichtigsten Lebensmomente mit meiner Stimme und helfe dir, deine Geschichte zu erzählen.
             </p>
           </div>
           
@@ -27,6 +27,12 @@ const Footer = () => {
               </Link>
               <Link to="/kontakt" className="text-dark-green/80 hover:text-dark-green transition-colors">
                 Kontakt
+              </Link>
+              <Link to="/impressum" className="text-dark-green/80 hover:text-dark-green transition-colors">
+                Impressum
+              </Link>
+              <Link to="/datenschutz" className="text-dark-green/80 hover:text-dark-green transition-colors">
+                Datenschutz
               </Link>
             </div>
           </div>
@@ -50,10 +56,20 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-dark-green/20 mt-8 pt-8 text-center">
-          <p className="text-dark-green/60 text-sm">
+        <div className="border-t border-dark-green/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-dark-green/60 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Jasmin Pemmer. Alle Rechte vorbehalten.
           </p>
+          <div className="flex space-x-6">
+            <Link to="/impressum" className="text-dark-green/60 text-sm hover:text-dark-green transition-colors flex items-center">
+              <ExternalLink size={14} className="mr-1" />
+              Impressum
+            </Link>
+            <Link to="/datenschutz" className="text-dark-green/60 text-sm hover:text-dark-green transition-colors flex items-center">
+              <ExternalLink size={14} className="mr-1" />
+              Datenschutz
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
