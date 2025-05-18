@@ -30,7 +30,7 @@ const Index = () => {
             Worte für besondere Momente
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">
-            Als freie Rednerin gestalte ich Ihre Trauerfeiern, freie Trauungen und Kinderwillkommensfeste mit Herz und Persönlichkeit.
+            Als freie Reednerin gestalte ich deine Trauerfeier, Trauung oder dein Kinderwillkommensfest mit Herz und Persönlichkeit.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
@@ -62,7 +62,7 @@ const Index = () => {
       <section id="about" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-serif text-3xl md:text-4xl text-dark-green text-center mb-16">
-            Meine Angebote für Sie
+            Meine Angebote für dich
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -86,7 +86,7 @@ const Index = () => {
               />
               <h3 className="font-serif text-xl text-dark-green mb-3">Freie Trauung</h3>
               <p className="text-dark-green/80">
-                Persönliche Zeremonien für Ihren besonderen Tag. Ich gestalte Ihre Trauung genau nach Ihren Vorstellungen.
+                Persönliche Zeremonien für deinen besonderen Tag. Ich gestalte deine Trauung genau nach deinen Vorstellungen.
               </p>
             </div>
             
@@ -98,7 +98,7 @@ const Index = () => {
               />
               <h3 className="font-serif text-xl text-dark-green mb-3">Kinderwillkommensfeste</h3>
               <p className="text-dark-green/80">
-                Fröhliche und herzliche Zeremonien zur Begrüßung Ihres Kindes. Ein besonderer Start ins Leben.
+                Fröhliche und herzliche Zeremonien zur Begrüßung deines Kindes. Ein besonderer Start ins Leben.
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Index = () => {
       <section className="py-16 bg-cream">
         <div className="container mx-auto px-4">
           <h2 className="font-serif text-3xl text-dark-green text-center mb-12">
-            Sehen Sie mich in Aktion
+            Das bin ich!
           </h2>
           
           <div className="max-w-3xl mx-auto aspect-video bg-dark-green/10 flex items-center justify-center rounded-lg overflow-hidden">
@@ -163,10 +163,10 @@ const Index = () => {
       <section className="py-16 bg-dark-green text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-serif text-3xl mb-6">
-            Lassen Sie uns gemeinsam Ihre Geschichte erzählen
+            Lass uns gemeinsam deine Geschichte erzählen
           </h2>
           <p className="max-w-2xl mx-auto mb-8 text-white/80">
-            Ich freue mich darauf, mit Ihnen ins Gespräch zu kommen und Ihre Wünsche kennenzulernen.
+            Ich freue mich darauf, mit dir ins Gespräch zu kommen und deine Wünsche kennenzulernen.
           </p>
           <Button 
             variant="outline" 
