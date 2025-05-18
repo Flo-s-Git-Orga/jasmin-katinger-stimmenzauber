@@ -42,7 +42,7 @@ const Index = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-dark-green"
+              className="border-white text-white hover:bg-white hover:text-dark-green font-semibold"
               asChild
             >
               <Link to="/kontakt">Kontaktieren</Link>
@@ -170,7 +170,7 @@ const Index = () => {
           </p>
           <Button 
             variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-dark-green"
+            className="border-white text-white hover:bg-white hover:text-dark-green font-semibold"
             asChild
           >
             <Link to="/kontakt">Jetzt kontaktieren</Link>
