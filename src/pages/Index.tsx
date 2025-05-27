@@ -27,10 +27,10 @@ const Index = () => {
         
         <div className="container mx-auto px-4 z-10 text-center">
           <h1 className="font-handwriting text-4xl md:text-6xl lg:text-7xl text-white mb-6">
-            Worte für besondere Momente
+            Bedachte Worte für besondere Momente
           </h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">
-            Als freie Reednerin gestalte ich deine Trauerfeier, Trauung oder dein Kinderwillkommensfest mit Herz und Persönlichkeit.
+          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8">
+            Gemeinsam feiern wir deine besonderen Momente und geben ihnen den Rahmen, den sie verdienen. Meine Zeremonien sind darauf ausgerichtet, die Menschen in den Mittelpunkt zu stellen, die Einzigartigkeit jedes Einzelnen zu würdigen und die besonderen Momente des Lebens in den Vordergrund zu stellen.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
@@ -42,7 +42,7 @@ const Index = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-dark-green font-semibold"
+              className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-dark-green font-bold"
               asChild
             >
               <Link to="/kontakt">Kontaktieren</Link>
@@ -65,41 +65,105 @@ const Index = () => {
             Meine Angebote für dich
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="service-card flex flex-col items-center text-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Trauerfeier */}
+            <div className="service-card flex flex-col">
               <img 
                 src="/placeholder.svg" 
                 alt="Trauerfeier" 
-                className="w-20 h-20 object-cover rounded-full mb-4"
+                className="w-20 h-20 object-cover rounded-full mb-6 mx-auto"
               />
-              <h3 className="font-serif text-xl text-dark-green mb-3">Trauerfeier</h3>
-              <p className="text-dark-green/80">
-                Einfühlsame Worte für den letzten Abschied. Ich gestalte würdevolle Trauerfeiern, die das Leben der Verstorbenen würdigen.
+              <h3 className="font-serif text-2xl text-dark-green mb-4 text-center">Trauerfeier</h3>
+              <p className="text-dark-green/80 mb-6 leading-relaxed">
+                Eine Trauerfeier, die von einer Freien Rednerin gestaltet wird, ist eine persönliche und individuelle Zeremonie, die das Leben und die Einzigartigkeit des Verstorbenen würdigt. Mit einfühlsamen Worten wird eine Atmosphäre des Gedenkens und der Wertschätzung geschaffen, die Trost spendet und die besonderen Momente des Lebens des Verstorbenen in den Vordergrund stellt.
               </p>
+              
+              <div className="mb-6">
+                <h4 className="font-semibold text-dark-green mb-3">Meine Leistungen:</h4>
+                <ul className="text-sm text-dark-green/80 space-y-2">
+                  <li>• Ein gemeinsames Vorgespräch: gerne bei Ihnen zuhause oder auf Wunsch auch online</li>
+                  <li>• Beratung über die Gestaltungsmöglichkeiten der Zeremonie, gemäß Ihrer Wünsche und Vorstellungen</li>
+                  <li>• Das Leiten der Zeremonie</li>
+                  <li>• Individuelle, sehr persönliche Rede die die Persönlichkeit und das Leben hervorhebt</li>
+                  <li>• Bis zum Ende der Zeremonie, stehe ich für Fragen zur Seite</li>
+                  <li>• Redner-Sicherheit: bei einem krankheitsbedingten Ausfall, organisiere ich zuverlässig adäquaten Ersatz</li>
+                </ul>
+              </div>
+              
+              <Button 
+                variant="outline" 
+                className="border-2 border-dark-green bg-transparent text-dark-green hover:bg-dark-green hover:text-white font-semibold mt-auto"
+                asChild
+              >
+                <Link to="/kontakt">Unverbindliches Angebot anfragen</Link>
+              </Button>
             </div>
             
-            <div className="service-card flex flex-col items-center text-center">
+            {/* Freie Trauung */}
+            <div className="service-card flex flex-col">
               <img 
                 src="/placeholder.svg" 
                 alt="Freie Trauung" 
-                className="w-20 h-20 object-cover rounded-full mb-4"
+                className="w-20 h-20 object-cover rounded-full mb-6 mx-auto"
               />
-              <h3 className="font-serif text-xl text-dark-green mb-3">Freie Trauung</h3>
-              <p className="text-dark-green/80">
-                Persönliche Zeremonien für deinen besonderen Tag. Ich gestalte deine Trauung genau nach deinen Vorstellungen.
+              <h3 className="font-serif text-2xl text-dark-green mb-4 text-center">Freie Trauung</h3>
+              <p className="text-dark-green/80 mb-6 leading-relaxed">
+                Eine freie Trauung ist eine individuelle und persönliche Hochzeitszeremonie, die unabhängig von religiösen oder staatlichen Vorgaben gestaltet wird. Sie bietet Paaren die Freiheit, ihre Liebe und Verbundenheit auf eine Weise zu feiern, die ganz ihren Wünschen und Vorstellungen entspricht.
               </p>
+              
+              <div className="mb-6">
+                <h4 className="font-semibold text-dark-green mb-3">Meine Leistungen:</h4>
+                <ul className="text-sm text-dark-green/80 space-y-2">
+                  <li>• Persönliches, unverbindliches Kennenlerngespräch (auf Wunsch auch digital möglich)</li>
+                  <li>• Nach Zusage: Zweitgespräch zur konkreten Planung der Zeremonie</li>
+                  <li>• Das Leiten der Zeremonie vom Einzug bis zum Auszug</li>
+                  <li>• Individuelle, sehr persönliche Rede über euch</li>
+                  <li>• Bis zu eurem Tag, stehe ich jederzeit für Fragen zur Seite</li>
+                  <li>• Redner-Sicherheit: bei einem krankheitsbedingten Ausfall, organisiere ich zuverlässig adäquaten Ersatz</li>
+                </ul>
+              </div>
+              
+              <Button 
+                variant="outline" 
+                className="border-2 border-dark-green bg-transparent text-dark-green hover:bg-dark-green hover:text-white font-semibold mt-auto"
+                asChild
+              >
+                <Link to="/kontakt">Unverbindliches Angebot anfragen</Link>
+              </Button>
             </div>
             
-            <div className="service-card flex flex-col items-center text-center">
+            {/* Kinderwillkommensfest */}
+            <div className="service-card flex flex-col">
               <img 
                 src="/placeholder.svg" 
                 alt="Kinderwillkommensfeste" 
-                className="w-20 h-20 object-cover rounded-full mb-4"
+                className="w-20 h-20 object-cover rounded-full mb-6 mx-auto"
               />
-              <h3 className="font-serif text-xl text-dark-green mb-3">Kinderwillkommensfeste</h3>
-              <p className="text-dark-green/80">
-                Fröhliche und herzliche Zeremonien zur Begrüßung deines Kindes. Ein besonderer Start ins Leben.
+              <h3 className="font-serif text-2xl text-dark-green mb-4 text-center">Kinderwillkommensfest</h3>
+              <p className="text-dark-green/80 mb-6 leading-relaxed">
+                Eine Geburt oder eine Adoption eines Kindes, stellt einen unvergleichlich besonderen Moment im Leben dar. Mit einem Kinderwillkommensfest (kurz KIWI) ist es möglich, das neue Familienmitglied mit einer neutralen, religiös unabhängigen Zeremonie willkommen zu heißen und auch Paten zu ernennen.
               </p>
+              
+              <div className="mb-6">
+                <h4 className="font-semibold text-dark-green mb-3">Meine Leistungen:</h4>
+                <ul className="text-sm text-dark-green/80 space-y-2">
+                  <li>• Persönliches, unverbindliches Kennenlerngespräch (auf Wunsch auch digital möglich)</li>
+                  <li>• Nach Zusage: Zweitgespräch zur konkreten Planung der Zeremonie</li>
+                  <li>• Beratung über die Gestaltungsmöglichkeiten der Zeremonie, gemäß euer Wünsche und Vorstellungen</li>
+                  <li>• Ideen und Erfahrungen zum Einbinden der Paten/der Gäste</li>
+                  <li>• Individuelle, sehr persönliche Rede über euch als Familie</li>
+                  <li>• Das Leiten der Zeremonie von Anfang bis zum Ende</li>
+                  <li>• Redner-Sicherheit: bei einem krankheitsbedingten Ausfall, organisiere ich zuverlässig adäquaten Ersatz</li>
+                </ul>
+              </div>
+              
+              <Button 
+                variant="outline" 
+                className="border-2 border-dark-green bg-transparent text-dark-green hover:bg-dark-green hover:text-white font-semibold mt-auto"
+                asChild
+              >
+                <Link to="/kontakt">Unverbindliches Angebot anfragen</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -170,7 +234,7 @@ const Index = () => {
           </p>
           <Button 
             variant="outline" 
-            className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-dark-green font-semibold"
+            className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-dark-green font-bold"
             asChild
           >
             <Link to="/kontakt">Jetzt kontaktieren</Link>
