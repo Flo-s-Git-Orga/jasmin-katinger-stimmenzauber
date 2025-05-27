@@ -108,8 +108,8 @@ export default {
 				'scale-in': 'scale-in 0.2s ease-out'
 			},
 			fontFamily: {
-				'serif': ['Playfair Display', 'serif'],
-				'sans': ['Raleway', 'sans-serif'],
+				'serif': ['Perpetua', 'Times New Roman', 'serif'],
+				'sans': ['Avenir', 'Helvetica Neue', 'Arial', 'sans-serif'],
 				'handwriting': ['Dancing Script', 'cursive']
 			}
 		}

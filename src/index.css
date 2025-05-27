@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -48,11 +48,11 @@
 
   body {
     @apply bg-beige text-dark-green;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Avenir', 'Helvetica Neue', 'Arial', sans-serif;
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Perpetua', 'Times New Roman', serif;
   }
 }
 
