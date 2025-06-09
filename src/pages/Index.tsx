@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown } from 'lucide-react';
@@ -225,30 +224,21 @@ const Index = () => {
             Das sagen meine Kunden
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <div className="testimonial-card">
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-dark-green/10 mr-4"></div>
+                <img 
+                  src="/lovable-uploads/fc18bd29-7ecc-4eae-bf64-bb64db7dada2.png" 
+                  alt="Claudia Greimel"
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
-                  <h4 className="font-medium text-dark-green">Maria & Thomas</h4>
-                  <p className="text-sm text-dark-green/70">Freie Trauung</p>
+                  <h4 className="font-medium text-dark-green">Claudia Greimel</h4>
+                  <p className="text-sm text-dark-green/70">Google Bewertung</p>
                 </div>
               </div>
               <p className="text-dark-green/80 italic">
-                "Jasmin hat unsere freie Trauung zu etwas ganz Besonderem gemacht. Ihre warme Stimme und die persönlichen Worte haben alle Gäste berührt. Wir sind unendlich dankbar."
-              </p>
-            </div>
-            
-            <div className="testimonial-card">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-dark-green/10 mr-4"></div>
-                <div>
-                  <h4 className="font-medium text-dark-green">Familie Müller</h4>
-                  <p className="text-sm text-dark-green/70">Trauerfeier</p>
-                </div>
-              </div>
-              <p className="text-dark-green/80 italic">
-                "Wir möchten uns herzlich für die einfühlsame Gestaltung der Trauerfeier bedanken. Jasmin hat es geschafft, das Leben unserer Mutter in all seinen Facetten zu würdigen."
+                "Jasmin macht mit ihrer einfühlsamen Art jede Zeremonie zu einem einzigartigen und persönlichen Fest. Dadurch bleibt es allen lange in Erinnerung. Vielen Dank für dafür!"
               </p>
             </div>
           </div>

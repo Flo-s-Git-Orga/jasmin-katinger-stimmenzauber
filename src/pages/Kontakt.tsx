@@ -118,7 +118,7 @@ const Kontakt = () => {
               <div className="absolute inset-0">
                 <img 
                   src="/placeholder.svg" 
-                  alt="Jasmin Pemmer" 
+                  alt="Jasmin Katinger" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -129,8 +129,8 @@ const Kontakt = () => {
                 <div className="space-y-4 text-white">
                   <div className="flex items-center">
                     <Mail size={20} className="mr-3" />
-                    <a href="mailto:info@jasmin-pemmer.de" className="hover:underline">
-                      info@jasmin-pemmer.de
+                    <a href="mailto:kontakt@jasminkatinger.at" className="hover:underline">
+                      kontakt@jasminkatinger.at
                     </a>
                   </div>
                   <div className="flex items-center">

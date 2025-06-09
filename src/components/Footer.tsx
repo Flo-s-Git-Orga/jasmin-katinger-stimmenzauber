@@ -40,9 +40,9 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-serif text-xl mb-4 text-dark-green">Kontakt</h3>
             <div className="flex flex-col space-y-3">
-              <a href="mailto:info@jasmin-pemmer.de" className="flex items-center text-dark-green/80 hover:text-dark-green transition-colors">
+              <a href="mailto:kontakt@jasminkatinger.at" className="flex items-center text-dark-green/80 hover:text-dark-green transition-colors">
                 <Mail size={18} className="mr-2" />
-                <span>info@jasmin-pemmer.de</span>
+                <span>kontakt@jasminkatinger.at</span>
               </a>
               <a href="tel:+491234567890" className="flex items-center text-dark-green/80 hover:text-dark-green transition-colors">
                 <Phone size={18} className="mr-2" />
