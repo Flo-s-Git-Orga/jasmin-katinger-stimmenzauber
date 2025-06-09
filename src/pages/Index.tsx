@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown } from 'lucide-react';
@@ -201,7 +202,7 @@ const Index = () => {
       </section>
 
       {/* Video Section */}
-      <section className="py-16 bg-cream">
+      <section className="py-16 bg-beige">
         <div className="container mx-auto px-4">
           <h2 className="font-serif text-3xl text-dark-green text-center mb-12">
             Das bin ich!

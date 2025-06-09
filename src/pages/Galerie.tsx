@@ -2,16 +2,14 @@
 import React from 'react';
 
 const Galerie = () => {
-  // Placeholder images for the gallery
+  // Updated images for the gallery with real photos
   const images = [
-    { id: 1, src: '/placeholder.svg', alt: 'Freie Trauung im Garten', category: 'Trauung' },
-    { id: 2, src: '/placeholder.svg', alt: 'Trauerfeier', category: 'Trauerfeier' },
-    { id: 3, src: '/placeholder.svg', alt: 'Kinderwillkommensfest', category: 'Kinderwillkommen' },
-    { id: 4, src: '/placeholder.svg', alt: 'Hochzeit am See', category: 'Trauung' },
-    { id: 5, src: '/placeholder.svg', alt: 'Trauung im Weinberg', category: 'Trauung' },
-    { id: 6, src: '/placeholder.svg', alt: 'Gedenkfeier', category: 'Trauerfeier' },
-    { id: 7, src: '/placeholder.svg', alt: 'Willkommensfest für Zwillinge', category: 'Kinderwillkommen' },
-    { id: 8, src: '/placeholder.svg', alt: 'Herbsthochzeit', category: 'Trauung' },
+    { id: 1, src: '/lovable-uploads/12003b59-518b-44d1-9675-b9879f170795.png', alt: 'Kinderwillkommensfest mit bunten Konfetti', category: 'Kinderwillkommen' },
+    { id: 2, src: '/lovable-uploads/abc50373-ab7e-4fc9-a698-6f3276b0fb61.png', alt: 'Freie Trauung am Strand', category: 'Trauung' },
+    { id: 3, src: '/lovable-uploads/1f2b1318-93cb-456f-afb3-b1d9e1c6b03e.png', alt: 'Hochzeitsauto mit Just Married Schild', category: 'Trauung' },
+    { id: 4, src: '/lovable-uploads/ef16d38a-2e4a-4ba3-b6d1-5cc76a595c65.png', alt: 'Gedenkblumen bei Trauerfeier', category: 'Trauerfeier' },
+    { id: 5, src: '/lovable-uploads/5c0a84d0-a7fe-43d6-80e4-1c6e85cfd2e5.png', alt: 'Weiße Rose am Strand - Gedenkzeremonie', category: 'Trauerfeier' },
+    { id: 6, src: '/lovable-uploads/99e96f73-62a2-4b78-b407-8b22f6b44174.png', alt: 'Bunte Luftballons für Kinderwillkommensfest', category: 'Kinderwillkommen' },
   ];
 
   const [activeCategory, setActiveCategory] = React.useState('Alle');
