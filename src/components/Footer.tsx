@@ -44,13 +44,17 @@ const Footer = () => {
                 <Mail size={18} className="mr-2" />
                 <span>kontakt@jasminkatinger.at</span>
               </a>
-              <a href="tel:+491234567890" className="flex items-center text-dark-green/80 hover:text-dark-green transition-colors">
+              <a href="tel:+4367670235556" className="flex items-center text-dark-green/80 hover:text-dark-green transition-colors">
                 <Phone size={18} className="mr-2" />
-                <span>+49 123 456 7890</span>
+                <span>+43 676 70 23 556</span>
               </a>
               <div className="flex items-center text-dark-green/80">
                 <Home size={18} className="mr-2" />
-                <span>Wien, Österreich</span>
+                <span>Emmersdorf a.d. Donau & Wien</span>
+              </div>
+              <div className="mt-3 text-xs text-dark-green/70">
+                <p>Jasmin Katinger, zertifizierte Freie Rednerin</p>
+                <p>Freie Trauung, Trauerfeier, Kinderwillkommensfest, Jubiläen</p>
               </div>
             </div>
           </div>

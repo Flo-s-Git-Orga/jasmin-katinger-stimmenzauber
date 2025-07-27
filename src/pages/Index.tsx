@@ -31,7 +31,7 @@ const Index = () => {
             Bedachte Worte für besondere Momente
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Gemeinsam feiern wir deine besonderen Momente und geben ihnen den Rahmen, den sie verdienen. Meine Zeremonien sind darauf ausgerichtet, die Menschen in den Mittelpunkt zu stellen, die Einzigartigkeit jedes Einzelnen zu würdigen und die besonderen Momente des Lebens in den Vordergrund zu stellen.
+            Gemeinsam feiern wir deine besonderen Momente und geben ihnen den Rahmen, den sie verdienen. Meine Zeremonien sind darauf ausgerichtet, die Menschen in den Mittelpunkt zu rücken, die Einzigartigkeit jedes Einzelnen zu würdigen und die besonderen Momente des Lebens entsprechend zu feiern.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
@@ -59,7 +59,40 @@ const Index = () => {
         </button>
       </section>
 
-      {/* About Section */}
+      {/* About Me Section */}
+      <section className="py-20 bg-cream">
+        <div className="container mx-auto px-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-dark-green text-center mb-16">
+            Über mich
+          </h2>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-dark-green/80 leading-relaxed">
+              <p className="mb-6">
+                Mein Name ist Jasmin Katinger, ich bin 44 Jahre alt und lebe mit großer Freude sowohl in Emmersdorf an der Donau als auch in Wien – zwei Orte, die mir auf unterschiedliche Weise viel bedeuten. Ich habe das große Glück, zwei (mittlerweile erwachsene) Töchter zu haben, die mein Leben bereichern und mich immer wieder inspirieren.
+              </p>
+              
+              <p className="mb-6">
+                Sport ist ein wichtiger Teil meines Alltags – besonders Tennis, Radfahren und Kraftsport, den ich versuche mehrmals pro Woche zu betreiben. Bewegung gibt mir Energie, hält mich in Balance und stärkt nicht nur den Körper, sondern auch meinen Geist. Noch mehr Kraft tanke ich in der Natur: Sie ist mein Rückzugsort, mein Kompass. Hier finde ich Klarheit, treffe Entscheidungen und spüre, was wirklich zählt.
+              </p>
+              
+              <p className="mb-6">
+                Tiere liegen mir sehr am Herzen. Ich kümmere mich gerne um sie und schätze die tiefe, ehrliche Freundschaft, die sie schenken – frei von Masken und Erwartungen. Auch im Umgang mit Menschen ist mir Authentizität wichtig. Ich liebe es, gemeinsam etwas Neues zu erschaffen, Ideen zu entwickeln und mit Begeisterung umzusetzen.
+              </p>
+              
+              <p className="mb-6">
+                Humor und Sinnhaftigkeit sind für mich die perfekte Kombination: Wenn ich Spaß an einer Sache habe und gleichzeitig das Gefühl, dass sie Bedeutung hat, bin ich mit voller Freude und Hingabe dabei.
+              </p>
+              
+              <p>
+                Was ich nicht mag? Verschwendung, Unzuverlässigkeit, Gewalt und allzu wilde Abenteuer – ich schätze Achtsamkeit, Freundschaft, Verlässlichkeit und ein respektvolles Miteinander.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
       <section id="about" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-serif text-3xl md:text-4xl text-dark-green text-center mb-16">

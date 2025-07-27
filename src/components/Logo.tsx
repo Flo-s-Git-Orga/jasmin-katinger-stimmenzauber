@@ -13,7 +13,7 @@ const Logo = ({ className }: LogoProps) => {
         Jasmin Katinger
       </h1>
       <p className="text-xs text-light-green font-handwriting mt-0.5">
-        Meine Stimme, deine Geschichte.
+        Meine Stimme für Eure Geschichte, ganz individuell und sehr persönlich.
       </p>
     </div>
   );

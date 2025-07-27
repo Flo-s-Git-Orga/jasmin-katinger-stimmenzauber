@@ -19,7 +19,7 @@ const Kontakt = () => {
           Kontakt
         </h1>
         <p className="text-center text-dark-green/80 max-w-2xl mx-auto mb-12">
-          Ich freue mich auf Ihre Nachricht und beantworte gerne alle Ihre Fragen
+          Ich freue mich auf Deine Nachricht und beantworte gerne alle Fragen. Bitte um Verständnis, dass nur Anfragen mit vollständigem Namen und mit angegebener Emailadresse berücksichtigt werden.
         </p>
         
         <div className="max-w-6xl mx-auto bg-cream rounded-xl overflow-hidden shadow-lg">
@@ -135,13 +135,21 @@ const Kontakt = () => {
                   </div>
                   <div className="flex items-center">
                     <Phone size={20} className="mr-3" />
-                    <a href="tel:+491234567890" className="hover:underline">
-                      +49 123 456 7890
+                    <a href="tel:+4367670235556" className="hover:underline">
+                      +43 676 70 23 556
                     </a>
                   </div>
                   <div className="flex items-center">
                     <Home size={20} className="mr-3" />
-                    <span>Wien, Österreich</span>
+                    <span>Emmersdorf a.d. Donau & Wien, Österreich</span>
+                  </div>
+                  <div className="mt-6">
+                    <p className="text-sm text-white/90 mb-2">
+                      Jasmin Katinger, zertifizierte Freie Rednerin
+                    </p>
+                    <p className="text-xs text-white/80">
+                      Freie Trauung, Trauerfeier, Kinderwillkommensfest, Jubiläen
+                    </p>
                   </div>
                 </div>
               </div>
