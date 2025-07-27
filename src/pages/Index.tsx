@@ -251,30 +251,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Google Reviews Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-serif text-3xl text-dark-green text-center mb-16">
             Das sagen meine Kunden
           </h2>
           
-          <div className="max-w-2xl mx-auto">
-            <div className="testimonial-card">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="/lovable-uploads/fc18bd29-7ecc-4eae-bf64-bb64db7dada2.png" 
-                  alt="Claudia Greimel"
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-medium text-dark-green">Claudia Greimel</h4>
-                  <p className="text-sm text-dark-green/70">Google Bewertung</p>
-                </div>
-              </div>
-              <p className="text-dark-green/80 italic">
-                "Jasmin macht mit ihrer einfühlsamen Art jede Zeremonie zu einem einzigartigen und persönlichen Fest. Dadurch bleibt es allen lange in Erinnerung. Vielen Dank für dafür!"
-              </p>
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div className="elfsight-app-d027a240-7101-45e5-9573-5abc776ea907" data-elfsight-app-lazy></div>
           </div>
         </div>
       </section>

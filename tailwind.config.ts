@@ -53,7 +53,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				beige: "#fff6ec",
+				beige: "#fffbf7",
 				"dark-green": "#2D5D47",
 				"light-green": "#4A7A63",
 				cream: "#FFF5EA",
