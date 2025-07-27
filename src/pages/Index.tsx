@@ -251,7 +251,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Google Reviews Section */}
+      {/* Reviews Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-serif text-3xl text-dark-green text-center mb-16">
@@ -259,8 +259,8 @@ const Index = () => {
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div className="elfsight-app-d027a240-7101-45e5-9573-5abc776ea907" data-elfsight-app-lazy></div>
+            <div className="taggbox" style={{width:'100%',height:'100%',overflow:'auto'}} data-widget-id="294121" data-website="1"></div>
+            <script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
           </div>
         </div>
       </section>
