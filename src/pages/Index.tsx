@@ -45,12 +45,13 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <iframe
             src="https://www.youtube.com/embed/ACMTGx-Khj0?autoplay=1&mute=1&loop=1&playlist=ACMTGx-Khj0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&autohide=1"
-            className="w-full h-full object-cover scale-[1.3] blur-[2px]"
+            className="w-full h-full object-cover"
             allow="autoplay; encrypted-media"
             style={{ 
               filter: 'blur(2px)',
-              transform: 'scale(1.3)',
-              pointerEvents: 'none'
+              transform: 'scale(1.8)',
+              pointerEvents: 'none',
+              transformOrigin: 'center center'
             }}
           ></iframe>
           <div className="absolute inset-0 bg-dark-green/40"></div>
