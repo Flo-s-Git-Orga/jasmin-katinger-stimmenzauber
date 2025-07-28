@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <Logo className="mb-4" />
             <p className="text-dark-green/80 text-sm max-w-xs text-center md:text-left">
-              Ich begleite deine wichtigsten Lebensmomente mit meiner Stimme und helfe dir, deine Geschichte zu erzählen.
+              Ich begleite deine wichtigsten Lebensmomente und helfe dir, deine Geschichte zu erzählen.
             </p>
           </div>
           
@@ -62,7 +62,7 @@ const Footer = () => {
         
         <div className="border-t border-dark-green/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-dark-green/60 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Jasmin Pemmer. Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} Jasmin Katinger. Alle Rechte vorbehalten.
           </p>
           <div className="flex space-x-6">
             <Link to="/impressum" className="text-dark-green/60 text-sm hover:text-dark-green transition-colors flex items-center">
