@@ -1,11 +1,14 @@
 
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const Index = () => {
+  const videoRef = useRef<HTMLIFrameElement>(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
+
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
@@ -13,17 +16,44 @@ const Index = () => {
     }
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !isVideoVisible) {
+            setIsVideoVisible(true);
+            if (videoRef.current) {
+              videoRef.current.src = videoRef.current.src.replace('autoplay=0', 'autoplay=1');
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isVideoVisible]);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="h-screen relative flex items-center justify-center">
+      <section className="h-screen relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/placeholder.svg" 
-            alt="Jasmin Pemmer" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-dark-green/30"></div>
+          <iframe
+            src="https://www.youtube.com/embed/ACMTGx-Khj0?autoplay=1&mute=1&loop=1&playlist=ACMTGx-Khj0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&autohide=1"
+            className="w-full h-full object-cover scale-[1.3] blur-[2px]"
+            allow="autoplay; encrypted-media"
+            style={{ 
+              filter: 'blur(2px)',
+              transform: 'scale(1.3)',
+              pointerEvents: 'none'
+            }}
+          ></iframe>
+          <div className="absolute inset-0 bg-dark-green/40"></div>
         </div>
         
         <div className="container mx-auto px-4 z-10 text-center">
@@ -241,12 +271,15 @@ const Index = () => {
             Das bin ich!
           </h2>
           
-          <div className="max-w-3xl mx-auto aspect-video bg-dark-green/10 flex items-center justify-center rounded-lg overflow-hidden">
-            {/* Video will be embedded here later */}
-            <div className="text-dark-green text-center">
-              <p className="mb-2 text-lg">Video wird hier platziert</p>
-              <p className="text-sm">Ein persönlicher Einblick in meine Arbeit als Rednerin</p>
-            </div>
+          <div className="max-w-3xl mx-auto aspect-video rounded-lg overflow-hidden">
+            <iframe
+              ref={videoRef}
+              src="https://www.youtube.com/embed/ii71Ukq-iko?autoplay=0&controls=1&modestbranding=1&rel=0&showinfo=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1"
+              className="w-full h-full"
+              allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Das bin ich - Jasmin Katinger"
+            ></iframe>
           </div>
         </div>
       </section>
