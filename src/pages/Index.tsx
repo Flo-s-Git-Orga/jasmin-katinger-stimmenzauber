@@ -160,8 +160,8 @@ const Index = () => {
                 <AccordionContent>
                   <div className="pb-4">
                     <ul className="text-dark-green/80 space-y-2 pl-4">
-                      <li>• Ein gemeinsames Vorgespräch: gerne bei Ihnen zuhause oder auf Wunsch auch online</li>
-                      <li>• Beratung über die Gestaltungsmöglichkeiten der Zeremonie, gemäß Ihrer Wünsche und Vorstellungen</li>
+                      <li>• Ein gemeinsames Vorgespräch: gerne bei euch zuhause oder auf Wunsch auch online</li>
+                      <li>• Beratung über die Gestaltungsmöglichkeiten der Zeremonie, gemäß euren Wünschen und Vorstellungen</li>
                       <li>• Das Leiten der Zeremonie</li>
                       <li>• Individuelle, sehr persönliche Rede die die Persönlichkeit und das Leben hervorhebt</li>
                       <li>• Bis zum Ende der Zeremonie, stehe ich für Fragen zur Seite</li>
@@ -240,7 +240,7 @@ const Index = () => {
                     <ul className="text-dark-green/80 space-y-2 pl-4">
                       <li>• Persönliches, unverbindliches Kennenlerngespräch (auf Wunsch auch digital möglich)</li>
                       <li>• Nach Zusage: Zweitgespräch zur konkreten Planung der Zeremonie</li>
-                      <li>• Beratung über die Gestaltungsmöglichkeiten der Zeremonie, gemäß euer Wünsche und Vorstellungen</li>
+                      <li>• Beratung über die Gestaltungsmöglichkeiten der Zeremonie, gemäß euren Wünschen und Vorstellungen</li>
                       <li>• Ideen und Erfahrungen zum Einbinden der Paten/der Gäste</li>
                       <li>• Individuelle, sehr persönliche Rede über euch als Familie</li>
                       <li>• Das Leiten der Zeremonie von Anfang bis zum Ende</li>
