@@ -117,7 +117,7 @@ const Kontakt = () => {
             <div className="relative">
               <div className="absolute inset-0">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/lovable-uploads/4e28c3d4-28b4-4528-81f5-b33f17a5149b.png" 
                   alt="Jasmin Katinger" 
                   className="w-full h-full object-cover"
                 />
