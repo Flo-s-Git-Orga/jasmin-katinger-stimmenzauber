@@ -106,7 +106,7 @@ const Index = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8 py-4">
                   <div className="flex flex-col items-center lg:items-start lg:min-w-[200px] mb-4 lg:mb-0">
                     <img 
-                      src="/placeholder.svg" 
+                      src="/lovable-uploads/ef16d38a-2e4a-4ba3-b6d1-5cc76a595c65.png" 
                       alt="Trauerfeier" 
                       className="w-20 h-20 object-cover rounded-full mb-4"
                     />
@@ -145,7 +145,7 @@ const Index = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8 py-4">
                   <div className="flex flex-col items-center lg:items-start lg:min-w-[200px] mb-4 lg:mb-0">
                     <img 
-                      src="/placeholder.svg" 
+                      src="/lovable-uploads/abc50373-ab7e-4fc9-a698-6f3276b0fb61.png" 
                       alt="Freie Trauung" 
                       className="w-20 h-20 object-cover rounded-full mb-4"
                     />
@@ -184,7 +184,7 @@ const Index = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8 py-4">
                   <div className="flex flex-col items-center lg:items-start lg:min-w-[200px] mb-4 lg:mb-0">
                     <img 
-                      src="/placeholder.svg" 
+                      src="/lovable-uploads/12003b59-518b-44d1-9675-b9879f170795.png" 
                       alt="Kinderwillkommensfeste" 
                       className="w-20 h-20 object-cover rounded-full mb-4"
                     />
