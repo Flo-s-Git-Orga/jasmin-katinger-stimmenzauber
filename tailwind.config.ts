@@ -54,8 +54,8 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				beige: "#fffbf7",
-				"dark-green": "#2D5D47",
-				"light-green": "#4A7A63",
+				"dark-green": "#3a5960",
+				"light-green": "#4a6b73",
 				cream: "#FFF5EA",
 			},
 			borderRadius: {
