@@ -8,31 +8,40 @@ const Impressum = () => {
         <h1 className="font-serif text-4xl text-dark-green mb-10">Impressum</h1>
         
         <div className="prose max-w-3xl text-dark-green/80">
-          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Für den Inhalt verantwortlich</h2>
           <p>
-            Jasmin Pemmer<br />
-            Freie Rednerin<br />
-            Musterstraße 123<br />
-            1010 Wien<br />
+            Jasmin Katinger, BA<br />
+            zertifizierte Freie Rednerin
+          </p>
+          
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Adresse</h2>
+          <p>
+            St. Georgen 39<br />
+            3644 Emmersdorf<br />
             Österreich
           </p>
           
           <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Kontakt</h2>
           <p>
-            Telefon: +49 123 456 7890<br />
-            E-Mail: info@jasmin-pemmer.de
+            Telefon: +43 676 702 35 56<br />
+            E-Mail: kontakt@jasminkatinger.at
           </p>
           
-          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Umsatzsteuer-ID</h2>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Unternehmensgegenstand</h2>
+          <p>Freie Rednerin</p>
+          
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Bankverbindung</h2>
           <p>
-            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            DE123456789
+            Raiffeisenbank Region Mostviertel<br />
+            IBAN: AT22 3293 9000 0361 2801<br />
+            BICC: RLNWATWW939
           </p>
           
-          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Aufsichtsbehörde</h2>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Urheberrecht</h2>
           <p>
-            Zuständige Kammer: [Placeholder]<br />
-            Zuständige Aufsichtsbehörde: [Placeholder]
+            Die Inhalte dieser Webseite unterliegen, soweit rechtlich möglich, Schutzrechten (wie z.B. dem Urheberrecht). 
+            Jegliche Verwendung von bereitgestelltem Material, welche urheberrechtlich untersagt ist, bedarf schriftlicher 
+            Zustimmung des Webseitenbetreibers.
           </p>
           
           <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Haftungsausschluss</h2>

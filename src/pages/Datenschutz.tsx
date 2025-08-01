@@ -5,62 +5,58 @@ const Datenschutz = () => {
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
-        <h1 className="font-serif text-4xl text-dark-green mb-10">Datenschutzerklärung</h1>
+        <h1 className="font-serif text-4xl text-dark-green mb-10">Erklärung zur Informationspflicht</h1>
         
         <div className="prose max-w-3xl text-dark-green/80">
-          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">1. Datenschutz auf einen Blick</h2>
-          <h3 className="font-serif text-xl text-dark-green mt-6 mb-3">Allgemeine Hinweise</h3>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Datenschutzerklärung</h2>
           <p>
-            Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit deinen personenbezogenen Daten passiert, 
-            wenn du diese Website besuchst. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert 
-            werden kannst. Ausführliche Informationen zum Thema Datenschutz entnimmst du unserer unter diesem Text 
-            aufgeführten Datenschutzerklärung.
+            In folgender Datenschutzerklärung informiere ich Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen der Webseite von Jasmin Katinger. Der Schutz Ihrer Daten ist von höchster Priorität, weshalb personenbezogene Daten nur auf Grundlage der gesetzlichen Bestimmungen erhoben und verarbeitet werden (Datenschutzgrundverordnung, Telekommunikationsgesetz 2003).
+          </p>
+          <p>
+            Sobald Sie als Benutzer auf der Webseite von Jasmin Katinger zugreifen oder diese besuchen wird Ihre IP-Adresse, Beginn sowie Beginn und Ende der Sitzung erfasst. Dies ist technisch bedingt und stellt somit ein berechtigtes Interesse iSv Art 6 Abs 1 lit f DSGVO.
           </p>
           
-          <h3 className="font-serif text-xl text-dark-green mt-6 mb-3">Datenerfassung auf dieser Website</h3>
-          <h4 className="font-medium text-lg text-dark-green mt-4 mb-2">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Kontaktaufnahme</h2>
           <p>
-            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten 
-            kannst du dem Impressum dieser Website entnehmen.
+            Wenn Sie Jasmin Katinger, entweder über das Kontaktformular auf der Website oder per E-Mail kontaktieren, dann werden die von Ihnen übermittelten Daten zwecks Bearbeitung Ihrer Anfrage oder für den Fall von weiteren Anschlussfragen für sechs Monate gespeichert. Die Zustimmung dazu, erteilen Sie bei Verwendung des Kontaktformulars oder bei Senden einer Emailanfrage.
+          </p>
+          <p>
+            Bitte bedenken Sie beim Eingehen einer Vertragsverpflichtung die gesetzlichen Aufbewahrungspflichten für ausgestellte Rechnungen (Finanzamt), welche die Websiteinhaberin dazu verpflichten diese für eine gesetzlich vorgegebene Dauer aufzubewahren.
+          </p>
+          <p>
+            Ihre Daten werden nicht zu Werbe- oder Verkaufszwecke an Dritte weitergegeben. Eine Weitergabe an Dritte (wie Behörden, Inkassobüro, Rechtsanwälte) erfolgt ausschließlich dann, wenn es zur Geltendmachung von Rechtsansprüchen erfolgt.
           </p>
           
-          <h4 className="font-medium text-lg text-dark-green mt-4 mb-2">Wie erfassen wir deine Daten?</h4>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Cookies</h2>
           <p>
-            Deine Daten werden zum einen dadurch erhoben, dass du uns diese mitteilst. Hierbei kann es sich z. B. 
-            um Daten handeln, die du in ein Kontaktformular eingibst.
-          </p>
-          <p>
-            Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor 
-            allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die 
-            Erfassung dieser Daten erfolgt automatisch, sobald du diese Website betrittst.
+            Diese Website verwendet so genannte Cookies. Dabei handelt es sich um kleine Textdateien, die mit Hilfe des Browsers auf Ihrem Endgerät abgelegt werden. Sie richten keinen Schaden an. Cookies werden dazu genutzt, das Angebot nutzerfreundlich zu gestalten. Einige Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Sie ermöglichen es, Ihren Browser beim nächsten Besuch wiederzuerkennen. Wenn Sie dies nicht wünschen, so können Sie Ihren Browser so einrichten, dass er Sie über das Setzen von Cookies informiert und Sie dies nur im Einzelfall erlauben. Bei der Deaktivierung von Cookies kann die Funktionalität der Website eingeschränkt sein.
           </p>
           
-          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">2. Allgemeine Hinweise und Pflichtinformationen</h2>
-          <h3 className="font-serif text-xl text-dark-green mt-6 mb-3">Datenschutz</h3>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Ihre Rechte als Betroffener</h2>
           <p>
-            Die Betreiber dieser Seiten nehmen den Schutz deiner persönlichen Daten sehr ernst. Wir behandeln deine 
-            personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie 
-            dieser Datenschutzerklärung.
+            Sie als Betroffener haben bezüglich Ihrer Daten, welche bei Jasmin Katinger gespeichert sind, grundsätzlich ein Recht auf:
+          </p>
+          <ul className="list-disc ml-6 space-y-1">
+            <li>Auskunft</li>
+            <li>Löschung der Daten</li>
+            <li>Berichtigung der Daten</li>
+            <li>Übertragbarkeit der Daten</li>
+            <li>Widerruf und Widerspruch zur Datenverarbeitung</li>
+            <li>Einschränkung</li>
+          </ul>
+          <p>
+            Wenn Sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen das Datenschutzrecht passiert sind, so haben Sie die Möglichkeit sich bei der Inhaberin der Website (kontakt@jasminkatinger.at) oder der Datenschutzbehörde zu beschweren.
           </p>
           
-          <h3 className="font-serif text-xl text-dark-green mt-6 mb-3">Hinweis zur verantwortlichen Stelle</h3>
+          <h2 className="font-serif text-2xl text-dark-green mt-8 mb-4">Kontaktdaten</h2>
           <p>
-            Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
-          </p>
-          <p>
-            Jasmin Pemmer<br />
-            Musterstraße 123<br />
-            1010 Wien<br />
-            Österreich
-          </p>
-          <p>
-            Telefon: +49 123 456 7890<br />
-            E-Mail: info@jasmin-pemmer.de
+            Webseitenbetreiber: Jasmin Katinger<br />
+            Telefonnummer: +43 676 7023556<br />
+            Email: kontakt@jasminkatinger.at
           </p>
           
-          <p className="mt-10 text-dark-green/60">
-            [Dieser Text ist ein Platzhalter und muss vor der finalen Veröffentlichung der Website durch einen 
-            juristisch geprüften Datenschutztext ersetzt werden.]
+          <p className="mt-8 text-sm text-dark-green/60">
+            Quelle: Datenschutzgenerator Österreich DSGVO
           </p>
         </div>
       </div>

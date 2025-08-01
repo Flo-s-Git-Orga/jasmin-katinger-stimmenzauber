@@ -9,10 +9,10 @@ const Index = () => {
   const videoRef = useRef<HTMLIFrameElement>(null);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToVideo = () => {
+    const videoSection = document.querySelector('.py-16.bg-beige');
+    if (videoSection) {
+      videoSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -68,7 +68,7 @@ const Index = () => {
             <Button 
               variant="default" 
               className="bg-dark-green hover:bg-light-green text-white"
-              onClick={scrollToAbout}
+              onClick={scrollToVideo}
             >
               Über mich
             </Button>
@@ -84,7 +84,7 @@ const Index = () => {
         
         <button 
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
-          onClick={scrollToAbout}
+          onClick={scrollToVideo}
         >
           <ArrowDown size={32} />
         </button>
@@ -226,7 +226,7 @@ const Index = () => {
                   
                   <div className="flex-1">
                     <p className="text-dark-green/80 mb-4 leading-relaxed">
-                      Eine Geburt oder eine Adoption eines Kindes, stellt einen unvergleichlich besonderen Moment im Leben dar. Mit einem Kinderwillkommensfest (kurz KIWI) ist es möglich, das neue Familienmitglied mit einer neutralen, religiös unabhängigen Zeremonie willkommen zu heißen und auch Paten zu ernennen.
+                      Eine Geburt oder eine Adoption eines Kindes, stellt einen unvergleichlich besonderen Moment im Leben dar. Mit einem Kinderwillkommensfest ist es möglich, das neue Familienmitglied mit einer neutralen, religiös unabhängigen Zeremonie willkommen zu heißen und auch Paten zu ernennen.
                     </p>
                     
                     <AccordionTrigger className="text-dark-green font-semibold hover:text-dark-green/80 hover:no-underline py-2">
