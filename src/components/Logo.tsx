@@ -8,7 +8,7 @@ interface LogoProps {
 
 const Logo = ({ className }: LogoProps) => {
   return (
-    <div className={cn("flex flex-col items-center md:items-center", className)}>
+    <div className={cn("flex flex-col items-start md:items-center", className)}>
       <h1 className="text-dark-green font-serif text-xl font-bold tracking-wide text-left md:text-center">
         Jasmin Katinger
       </h1>
