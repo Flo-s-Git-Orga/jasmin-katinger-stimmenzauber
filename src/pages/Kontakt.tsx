@@ -114,7 +114,7 @@ const Kontakt = () => {
             </div>
             
             {/* Contact Image and Info */}
-            <div className="relative">
+            <div className="relative min-h-[400px] md:min-h-full">
               <div className="absolute inset-0">
                 <img 
                   src="/lovable-uploads/4e28c3d4-28b4-4528-81f5-b33f17a5149b.png" 
@@ -122,29 +122,29 @@ const Kontakt = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-dark-green/70 flex flex-col justify-end p-8">
-                <h3 className="font-serif text-2xl text-white mb-6">
+              <div className="absolute inset-0 bg-dark-green/70 flex flex-col justify-center md:justify-end p-6 md:p-8">
+                <h3 className="font-serif text-xl md:text-2xl text-white mb-4 md:mb-6">
                   Kontaktinformationen
                 </h3>
-                <div className="space-y-4 text-white">
+                <div className="space-y-3 md:space-y-4 text-white">
                   <div className="flex items-center">
-                    <Mail size={20} className="mr-3" />
-                    <a href="mailto:kontakt@jasminkatinger.at" className="hover:underline">
+                    <Mail size={18} className="mr-3 flex-shrink-0" />
+                    <a href="mailto:kontakt@jasminkatinger.at" className="hover:underline text-sm md:text-base">
                       kontakt@jasminkatinger.at
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <Phone size={20} className="mr-3" />
-                    <a href="tel:+4367670235556" className="hover:underline">
+                    <Phone size={18} className="mr-3 flex-shrink-0" />
+                    <a href="tel:+4367670235556" className="hover:underline text-sm md:text-base">
                       +43 676 70 23 556
                     </a>
                   </div>
-                  <div className="flex items-center">
-                    <Home size={20} className="mr-3" />
-                    <span>Emmersdorf a.d. Donau & Wien, Österreich</span>
+                  <div className="flex items-start">
+                    <Home size={18} className="mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm md:text-base">Emmersdorf a.d. Donau & Wien, Österreich</span>
                   </div>
-                  <div className="mt-6">
-                    <p className="text-sm text-white/90 mb-2">
+                  <div className="mt-4 md:mt-6">
+                    <p className="text-xs md:text-sm text-white/90 mb-1 md:mb-2">
                       Jasmin Katinger, zertifizierte Freie Rednerin
                     </p>
                     <p className="text-xs text-white/80">
