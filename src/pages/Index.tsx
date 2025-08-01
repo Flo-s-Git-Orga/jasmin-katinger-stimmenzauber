@@ -252,10 +252,10 @@ const Index = () => {
             </Accordion>
             
             {/* Zentraler CTA Button */}
-            <div className="text-center mt-12">
+            <div className="text-center mt-8 md:mt-12">
               <Button 
                 variant="outline" 
-                className="border-2 border-dark-green bg-transparent text-dark-green hover:bg-dark-green hover:text-white font-semibold text-lg px-8 py-3"
+                className="border-2 border-dark-green bg-transparent text-dark-green hover:bg-dark-green hover:text-white font-semibold text-base md:text-lg px-6 md:px-8 py-2 md:py-3 mx-4"
                 asChild
               >
                 <Link to="/kontakt">Unverbindliches Angebot anfragen</Link>
