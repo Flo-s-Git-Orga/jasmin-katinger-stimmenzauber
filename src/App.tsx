@@ -23,7 +23,6 @@ const App = () => (
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="*" element={<Navigate to="/index" />} />
           <Route path="/" element={<Index />} />
           <Route path="/galerie" element={<Galerie />} />
           <Route path="/kontakt" element={<Kontakt />} />
