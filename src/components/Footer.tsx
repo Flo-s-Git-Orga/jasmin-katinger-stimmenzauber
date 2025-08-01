@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start md:items-start">
             <h3 className="font-serif text-xl mb-4 text-dark-green">Navigation</h3>
             <div className="flex flex-col space-y-2">
               <Link to="/" className="text-dark-green/80 hover:text-dark-green transition-colors">
