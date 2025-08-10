@@ -1,0 +1,61 @@
+name: Build & Deploy (cPanel via SSH)
+
+on:
+  push:
+    branches: [ main ]   # change if you deploy from another branch
+
+env:
+  BUILD_DIR: dist        # change to 'build' if you use CRA
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Ensure remote path exists
+        run: |
+          ssh -p "${{ secrets.SSH_PORT }}" -i ~/.ssh/id_deploy \
+            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+            "mkdir -p '${{ secrets.REMOTE_PATH }}'"
+
+      - name: Deploy (rsync if available, else scp)
+        run: |
+          set -e
+          if ssh -p "${{ secrets.SSH_PORT }}" -i ~/.ssh/id_deploy \
+               "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" "command -v rsync >/dev/null 2>&1"; then
+            echo "Using rsync"
+            rsync -az --delete \
+              --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r \
+              --exclude='.htaccess' \
+              -e "ssh -p ${{ secrets.SSH_PORT }} -i ~/.ssh/id_deploy" \
+              "$BUILD_DIR"/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}/
+          else
+            echo "rsync not found; falling back to scp"
+            ssh -p "${{ secrets.SSH_PORT }}" -i ~/.ssh/id_deploy \
+              "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+              "find '${{ secrets.REMOTE_PATH }}' -mindepth 1 -maxdepth 1 ! -name '.htaccess' -exec rm -rf {} +"
+            scp -P "${{ secrets.SSH_PORT }}" -i ~/.ssh/id_deploy -r "$BUILD_DIR"/* \
+              "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}/"
+          fi
