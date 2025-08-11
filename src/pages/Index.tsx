@@ -295,7 +295,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <iframe 
               src="https://widget.taggbox.com/294121?website=1" 
-              style={{width:'100%',height:'100%',overflow:'auto',border:'none'}}
+              style={{width:'100%',height:'100%',minHeight:'300px',overflow:'auto',border:'none'}}
               title="Kundenbewertungen"
             ></iframe>
           </div>
