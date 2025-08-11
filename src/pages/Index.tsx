@@ -294,7 +294,6 @@ const Index = () => {
           
           <div className="max-w-4xl mx-auto">
             <div className="taggbox" style={{width:'100%',height:'100%',overflow:'auto'}} data-widget-id="294121" data-website="1"></div>
-            <script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
           </div>
         </div>
       </section>
