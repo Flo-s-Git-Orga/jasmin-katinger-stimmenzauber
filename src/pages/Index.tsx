@@ -100,7 +100,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-dark-green/80 leading-relaxed">
               <p className="mb-6">
-                Mein Name ist Jasmin Katinger, ich bin 44 Jahre alt und lebe mit großer Freude sowohl in Emmersdorf an der Donau als auch in Wien – zwei Orte, die mir auf unterschiedliche Weise viel bedeuten. Ich habe das große Glück, zwei (mittlerweile erwachsene) Töchter zu haben, die mein Leben bereichern und mich immer wieder inspirieren.
+                Mein Name ist Jasmin Katinger, ich bin 44 Jahre alt und lebe sowohl in Emmersdorf an der Donau als auch in Wien – zwei Orte, die mir auf unterschiedliche Weise viel bedeuten. Ich habe das große Glück, zwei (mittlerweile erwachsene) Töchter zu haben, die mein Leben bereichern und mich immer wieder inspirieren.
               </p>
               
               <p className="mb-6">
@@ -293,7 +293,11 @@ const Index = () => {
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="taggbox" style={{width:'100%',height:'100%',overflow:'auto'}} data-widget-id="294121" data-website="1"></div>
+            <iframe 
+              src="https://widget.taggbox.com/294121?website=1" 
+              style={{width:'100%',height:'100%',minHeight:'300px',overflow:'auto',border:'none'}}
+              title="Kundenbewertungen"
+            ></iframe>
           </div>
         </div>
       </section>
