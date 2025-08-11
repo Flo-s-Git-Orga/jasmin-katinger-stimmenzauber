@@ -100,7 +100,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-dark-green/80 leading-relaxed">
               <p className="mb-6">
-                Mein Name ist Jasmin Katinger, ich bin 44 Jahre alt und lebe mit großer Freude sowohl in Emmersdorf an der Donau als auch in Wien – zwei Orte, die mir auf unterschiedliche Weise viel bedeuten. Ich habe das große Glück, zwei (mittlerweile erwachsene) Töchter zu haben, die mein Leben bereichern und mich immer wieder inspirieren.
+                Mein Name ist Jasmin Katinger, ich bin 44 Jahre alt und lebe sowohl in Emmersdorf an der Donau als auch in Wien – zwei Orte, die mir auf unterschiedliche Weise viel bedeuten. Ich habe das große Glück, zwei (mittlerweile erwachsene) Töchter zu haben, die mein Leben bereichern und mich immer wieder inspirieren.
               </p>
               
               <p className="mb-6">
