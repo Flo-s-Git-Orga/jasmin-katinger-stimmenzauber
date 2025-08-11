@@ -1,16 +1,72 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, Home } from 'lucide-react';
+import { Mail, Phone, Home, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Kontakt = () => {
+  const [showSuccess, setShowSuccess] = useState(false);
+  const navigate = useNavigate();
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Form handling logic will go here
-    console.log('Form submitted');
+    const formData = new FormData(e.currentTarget);
+    
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const event = formData.get('event');
+    const message = formData.get('message');
+    
+    const emailBody = `NEUE ANFRAGE VIA WEBSITE
+
+Name: ${name}
+
+E-Mail: ${email}
+
+Telefon: ${phone || 'Nicht angegeben'}
+
+Anlass: ${event}
+
+Nachricht:
+${message}`;
+    
+    const mailtoLink = `mailto:hey@neuninger.com?subject=NEUE ANFRAGE VIA WEBSITE&body=${encodeURIComponent(emailBody)}`;
+    
+    window.location.href = mailtoLink;
+    setShowSuccess(true);
   };
+
+  if (showSuccess) {
+    return (
+      <div className="min-h-screen pt-24 pb-16 flex items-center justify-center">
+        <div className="container mx-auto px-4">
+          <div className="max-w-lg mx-auto bg-cream rounded-xl p-12 text-center shadow-lg">
+            <div className="mb-8">
+              <CheckCircle size={80} className="mx-auto text-dark-green mb-6" />
+              <h1 className="font-serif text-3xl text-dark-green mb-4">
+                Danke!
+              </h1>
+              <p className="text-dark-green text-lg mb-2">
+                Deine Anfrage wurde abgeschickt!
+              </p>
+              <p className="text-dark-green/80">
+                Ich werde mich zeitnah bei dir melden
+              </p>
+            </div>
+            <Button 
+              onClick={() => navigate('/')}
+              className="bg-dark-green hover:bg-light-green text-white px-8 py-3"
+            >
+              Zur Startseite
+            </Button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen pt-24 pb-16">
