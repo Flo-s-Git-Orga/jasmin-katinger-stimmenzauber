@@ -293,7 +293,11 @@ const Index = () => {
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="taggbox" style={{width:'100%',height:'100%',overflow:'auto'}} data-widget-id="294121" data-website="1"></div>
+            <iframe 
+              src="https://widget.taggbox.com/294121?website=1" 
+              style={{width:'100%',height:'100%',overflow:'auto',border:'none'}}
+              title="Kundenbewertungen"
+            ></iframe>
           </div>
         </div>
       </section>
