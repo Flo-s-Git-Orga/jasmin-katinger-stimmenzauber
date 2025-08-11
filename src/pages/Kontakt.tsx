@@ -5,38 +5,56 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, Home, CheckCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 const Kontakt = () => {
   const [showSuccess, setShowSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    
     const formData = new FormData(e.currentTarget);
     
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
-    const event = formData.get('event');
-    const message = formData.get('message');
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+    const event = formData.get('event') as string;
+    const message = formData.get('message') as string;
     
-    const emailBody = `NEUE ANFRAGE VIA WEBSITE
-
-Name: ${name}
-
-E-Mail: ${email}
-
-Telefon: ${phone || 'Nicht angegeben'}
-
-Anlass: ${event}
-
-Nachricht:
-${message}`;
+    // Get current time
+    const currentTime = new Date().toLocaleString('de-DE', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
     
-    const mailtoLink = `mailto:hey@neuninger.com?subject=NEUE ANFRAGE VIA WEBSITE&body=${encodeURIComponent(emailBody)}`;
-    
-    window.location.href = mailtoLink;
-    setShowSuccess(true);
+    try {
+      await emailjs.send(
+        'service_yaiprc5',
+        'template_nm2i03n',
+        {
+          title: event,
+          name: name,
+          time: currentTime,
+          phone: phone || 'Nicht angegeben',
+          message: message,
+          email: email
+        },
+        'V_cQIICqaURbdAT1B' // You'll need to replace this with your actual public key
+      );
+      
+      setShowSuccess(true);
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Es gab einen Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (showSuccess) {
@@ -162,9 +180,10 @@ ${message}`;
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-dark-green hover:bg-light-green text-white"
+                  disabled={isSubmitting}
+                  className="w-full bg-dark-green hover:bg-light-green text-white disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Nachricht senden
+                  {isSubmitting ? 'Wird gesendet...' : 'Nachricht senden'}
                 </Button>
               </form>
             </div>
