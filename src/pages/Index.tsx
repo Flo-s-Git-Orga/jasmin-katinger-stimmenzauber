@@ -282,9 +282,7 @@ const Index = () => {
               title="Das bin ich - Jasmin Katinger"
               style={{ 
                 border: 'none',
-                transform: 'scale(1.15)',
-                transformOrigin: 'center center',
-                margin: '-7.5%'
+                objectFit: 'cover'
               }}
             ></iframe>
           </div>
