@@ -272,7 +272,7 @@ const Index = () => {
             Das bin ich!
           </h2>
           
-          <div className="max-w-3xl mx-auto aspect-video rounded-lg overflow-hidden">
+          <div className="max-w-3xl mx-auto rounded-lg overflow-hidden" style={{ aspectRatio: '16/9' }}>
             <iframe
               ref={videoRef}
               src="https://www.youtube.com/embed/LS5uZ4A1RqA?autoplay=0&controls=1&modestbranding=1&rel=0&showinfo=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1"
@@ -280,6 +280,7 @@ const Index = () => {
               allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
               allowFullScreen
               title="Das bin ich - Jasmin Katinger"
+              style={{ border: 'none' }}
             ></iframe>
           </div>
         </div>
