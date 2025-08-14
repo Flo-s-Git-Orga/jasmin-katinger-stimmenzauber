@@ -275,7 +275,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto aspect-video rounded-lg overflow-hidden">
             <iframe
               ref={videoRef}
-              src="https://www.youtube.com/embed/ii71Ukq-iko?autoplay=0&controls=1&modestbranding=1&rel=0&showinfo=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1"
+              src="https://www.youtube.com/embed/LS5uZ4A1RqA?autoplay=0&controls=1&modestbranding=1&rel=0&showinfo=0&fs=1&cc_load_policy=0&iv_load_policy=3&autohide=1"
               className="w-full h-full"
               allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
               allowFullScreen
