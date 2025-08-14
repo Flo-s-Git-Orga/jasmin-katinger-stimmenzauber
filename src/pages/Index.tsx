@@ -280,7 +280,11 @@ const Index = () => {
               allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
               allowFullScreen
               title="Das bin ich - Jasmin Katinger"
-              style={{ border: 'none' }}
+              style={{ 
+                border: 'none',
+                transform: 'scale(1.02)',
+                transformOrigin: 'center center'
+              }}
             ></iframe>
           </div>
         </div>
